@@ -18,8 +18,18 @@
 \say{The test of all knowledge is experiment}
 
 \begin{code}
-main :: IO ()
-main = putStrLn "Hello, world!"
+data Atom = Atom
+type Matter = [Atom]
+\end{code}
+
+\begin{code}
+gravitational_potential_energy weight height = weight * height
+charge_in_energy force distance = force * distance
 \end{code}
 
 \end{document}
+
+\begin{code}
+main :: IO ()
+main = putStrLn "Hello, world!"
+\end{code}
